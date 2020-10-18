@@ -1,6 +1,7 @@
 
 body {
     background-image: url(photos/construction-cropped.jpg);
+    alt: 'picture of a construction site';
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
