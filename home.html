@@ -2,13 +2,110 @@
 
 <html>
   <head>
-    <title>INSERT TITLE HERE!</title>
+    <title>Reuling Associates</title>
     <link rel="stylesheet" href="index.css">
-    <!-- TODO: add additional links here! e.g. fonts, icons, more stylesheets, etc. -->
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
 
   <body>
-    <!-- TODO: put your HTML code here! -->
-  </body>
+    <header>
+      <img src="photos/reuling-logo.png" class="logo" alt="Reuling Associates Inc logo">
+      <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </header>
+    <div class="layout">
+      <div class="side">
+        <nav class="desktopnav">
+          <div class="home navdiv desk"><h3 class="navheader desk">HOME</h3></div>
+          <div class="services navdiv desk"><h3 class="navheader desk">SERVICES</h3></div>
+          <div class="references navdiv desk"><h3 class="navheader desk">REFERENCES</h3></div>
+          <div class="projects navdiv desk"><h3 class="navheader desk">PROJECTS</h3></div>
+          <div class="personnel navdiv desk"><h3 class="navheader desk">PERSONNEL</h3></div>
+        </nav>
+        <figure class="mapdiv">
+          <img src="photos/map.png" class="map">
+        </figure>
+      </div>
+      <main>
+        <div class="maindiv">
+          <h3 class="mainheader">Geotechnical and Materials Engineers</h3>
+          <p class="mainpara">
+            Reuling Associates, Inc. is a Baltimore-based small business specializing in construction 
+            testing and inspection, and geotechnical engineering. Since our incorporation in 1993, we have
+            successfully completed several noteworthy projects in the Baltimore area.
+          </p>
+          <p class="mainpara">
+            Our personnel have vast experience on all types of construction projects including schools, 
+            hospitals, retail, office buildings, retirement homes, parking garages, even golf courses.
+          </p>
+          <p class="mainpara">
+            Our company growth has been fueled by repeat business with many of Baltimore's quality 
+            oriented contractors, developers, and owners including Whiting Turner Contracting Company, 
+            Barton Mallow Construction Company, Oak Contracting Company, Baltimore County Public Schools, 
+            Harford County Public Schools, Carroll County Public Schools, The Johns Hopkins University 
+            and Hospital, and many others.
+          </p>
+          <p class="mainpara">
+            We are committed to providing quality testing and inspection services utilizing qualified 
+            and competent technicians, backed up by an experienced and responsive office staff.
+          </p>
+        </div>
+        <hr>
+        <h3 class="mainheader ourservicesslide">Our Services</h3>
+        <div class="servicesdiv">
+          <h3 class="mainheader ourservices">Our Services</h3>
+          <div><h3 class="serviceheader">Testing:</h3>
+          <ul>
+            <li>Soils</li>
+            <li>Concrete</li>
+            <li>Structural Steel</li>
+            <li>Masonry</li>
+            <li>Asphalt</li>
+          </ul></div>
+          <div><h3 class="serviceheader">Geotechnical Engineering:</h3>
+          <ul>
+            <li>Drilling</li>
+            <li>Engineering</li>
+            <li>Stormwater Management</li>
+            <li>Infiltration Rates</li>
+            <li>Test Pitting</li>
+          </ul></div>
+        </div>
+        
+      </main>
+    </div>
+  <img src="photos/map.png" class="smallmap">
+  <footer>
+    <p>© 2020 Reuling Associates, Inc.</p>
+    <h3 class="footerheader">15 West Aylesbury Road Timonium, Maryland 21093 410.560.7414</h3>
+  </footer>
+
+  <div id="sidenav">
+    <span onclick="closeNav()" class="closebtn">&#9776;</span>
+    <nav>
+      <div class="home navdiv slide"><h3 class="navheader">HOME</h3></div>
+      <div class="services navdiv slide"><h3 class="navheader">SERVICES</h3></div>
+      <div class="references navdiv slide"><h3 class="navheader">REFERENCES</h3></div>
+      <div class="projects navdiv slide"><h3 class="navheader">PROJECTS</h3></div>
+      <div class="personnel navdiv slide"><h3 class="navheader">PERSONNEL</h3></div>
+    </nav>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidenav").style.width = "250px";
+      document.getElementById("sidenav").style.paddingLeft = "20px";
+      document.getElementById("sidenav").style.paddingRight = "20px";
+      document.getElementById("main").style.marginRight = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("sidenav").style.width = "0";
+      document.getElementById("sidenav").style.paddingLeft = "0";
+      document.getElementById("sidenav").style.paddingRight = "0";
+      document.getElementById("main").style.marginRight= "0";
+    }
+    </script>
+
+
+</body>
 </html>
